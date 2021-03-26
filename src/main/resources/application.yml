@@ -1,0 +1,8 @@
+server:
+  port: 4051
+  servlet:
+    context-path: /study
+
+spring:
+  application:
+    name: study
