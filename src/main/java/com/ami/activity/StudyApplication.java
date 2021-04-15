@@ -1,4 +1,4 @@
-package com.me.study;
+package com.ami.activity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
