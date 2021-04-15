@@ -1,6 +1,6 @@
 server:
   servlet:
-    context-path: /study
+    context-path: /activity-registration
 
 spring:
   application:
