@@ -1,8 +1,25 @@
 server:
-  port: 4051
   servlet:
     context-path: /study
 
 spring:
   application:
     name: study
+
+---
+server:
+  port: 4051
+spring:
+  profiles: dev
+
+---
+server:
+  port: 4051
+spring:
+  profiles: test
+
+---
+server:
+  port: 4051
+spring:
+  profiles: prod
