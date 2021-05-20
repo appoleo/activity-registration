@@ -4,7 +4,10 @@ server:
 
 spring:
   application:
-    name: study
+    name: activity
+  profiles:
+    active: dev
+
 
 ---
 server:

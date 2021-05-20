@@ -4,13 +4,64 @@ server:
 
 spring:
   application:
-    name: study
+    name: activity
+  profiles:
+    active: dev
+  mail:
+    host: smtp.163.com
+    username: xiong_ricoh@163.com
+    password: DXUAWKQNEAJRPBIP
+#    protocol: smtp
+#    port:
+    default-encoding: utf-8
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+#      mail.smtp.socketFactory.port: 465
+#      mail.smtp.socketFactory.class: javax.net.ssl.SSLSocketFactory
+#      mail.smtp.socketFactory.fallback: false
+#  cloud:
+#    stream:
+#      binders:
+#        lierdaRabbit:
+#          type: rabbit
+#          environment:
+#            spring:
+#              rabbitmq:
+#                addresses: n2n.lierdalux.cn:8010
+#                username: admin
+#                password: lierdalux
+#                virtual-host: /
+#      defaultBinder: lierdaRabbit
+#      bindings:
+#        othercompany:
+#          destination: othercompany
+#          group: innjoy
+#          binder: lierdaRabbit
+#          contentType: application/json
+#      rabbit:
+#        bindings:
+#          othercompany:
+#            consumer:
+#              bindingRoutingKey: '*.innjoy'
+#              bindQueue: false
+#              queueNameGroupOnly: true
+#              exchangeDurable: false
+#              exchangeAutoDelete: false
+
 
 ---
 server:
   port: 4051
 spring:
   profiles: dev
+#  rabbitmq:
+#    host: n2n.lierdalux.cn
+#    port: 8010
+#    username: admin
+#    password: lierdalux
+#    virtual-host: /
 
 ---
 server:

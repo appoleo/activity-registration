@@ -33,3 +33,4 @@ build/
 .vscode/
 
 /log-activity
+/src/test/java/com/ami/
